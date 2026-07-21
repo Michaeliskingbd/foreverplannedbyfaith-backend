@@ -96,7 +96,7 @@ export const submitRsvp = async (req: Request, res: Response) => {
 
 export const getAllRsvps = async (req: Request, res: Response) => {
   try {
-    const adminPassword = process.env.ADMIN_PASSWORD || 'admin123';
+    const adminPassword = process.env.ADMIN_PASSWORD || 'admin@kennyfaith2026!';
     const authHeader = req.headers.authorization;
 
     if (!authHeader || authHeader !== `Bearer ${adminPassword}`) {
